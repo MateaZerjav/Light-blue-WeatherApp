@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Light blue WeatherApp</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+            id="search-form-input"
+          /><input type="submit" value="Search" class="search-form-submit" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="city-name" id="city-name">Zagreb</h1>
+            <p class="weather-details">
+              <span id="description"></span><br />
+              Humidity: <span id="humidity"></span>% <br />Wind:
+              <span id="Wind"></span> km/h
+            </p>
+          </div>
+          <div>
+            <h2>
+              <div class="weather-app-deco">
+                <div class="weather-app-degree" id="temperature"></div>
+                <div class="weather-app-sun">
+                  <div>
+                    <div id="icons"></div>
+                  </div>
+                  <div class="weather-app-unit">°C</div>
+                </div>
+              </div>
+            </h2>
+          </div>
+        </div>
+
+        <p class="time-displayed"><span id="time"></span></p>
+      </main>
+
+      <footer>
+        Coded by
+        <a target="_blank" href="https://github.com/MateaZerjav">
+          Matea Zerjav</a
+        >, is
+        <a
+          target="_blank"
+          href="https://github.com/MateaZerjav/Mateas-WeatherApp"
+          >open-sourced on GitHub</a
+        >
+        and hosted
+        <a target="_blank" href="https://matea-weatherapp.netlify.app/">
+          Netlify.</a
+        >
+      </footer>
+      <script src="src/index.js"></script>
+    </div>
+  </body>
+</html>

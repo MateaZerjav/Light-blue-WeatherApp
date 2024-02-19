@@ -78,3 +78,31 @@ footer {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.526);
 }
+.weather-forecast {
+  color: white;
+  max-width: 50%;
+  margin: 80px auto;
+  padding: 50px;
+  font-size: 25px;
+
+  font-family: "Fredoka", sans-serif;
+}
+
+.weather-forecast-day {
+  max-width: 100px;
+  background-color: rgba(173, 216, 230, 0.415);
+  box-shadow: 0 30px 50px rgb(65, 50, 100, 0.1);
+}
+.weather-forecast-date {
+  text-align: center;
+  color: rgba(66, 66, 218, 0.756);
+}
+
+.weather-forecast-icon {
+  display: block;
+  margin: 0 auto;
+}
+.weather-forecast-temperatures {
+  display: flex;
+  justify-content: space-between;
+}

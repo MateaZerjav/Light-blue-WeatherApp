@@ -54,6 +54,29 @@ function searchHandle(event) {
   searchCity(searchInputElement.value);
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = [`Tue`, `Wed`, `Thu`];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml += `<div class="weather-forecast-day"><div class="weather-forecast-date">Thu</div><div class="weather-forecast-icon">
+          <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" />
+        </div>
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature-max">
+            <strong>15°</strong>
+          </div>
+          <div class="weather-forecast-temperature-min">9°</div>
+        </div>
+      </div>
+    `;
+  });
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchHandle);
 searchCity("Zagreb");
+displayForecast();

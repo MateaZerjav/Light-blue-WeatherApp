@@ -47,6 +47,7 @@ main {
   font-size: 90px;
   margin-left: 33px;
 }
+
 .weather-app-data {
   display: flex;
   justify-content: space-between;
@@ -67,6 +68,7 @@ main {
   justify-content: space-between;
   padding-top: 70px;
 }
+
 .time-displayed {
   display: block;
   text-align: center;

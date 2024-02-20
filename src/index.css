@@ -81,12 +81,10 @@ footer {
 }
 .weather-forecast {
   display: flex;
-  justify-content: space-between;
-  max-width: 50%;
-  margin: 80px auto;
-  padding: 50px;
+  justify-content: space-around;
+  margin: 0;
+  padding-top: 50px;
   font-size: 25px;
-
   font-family: "Fredoka", sans-serif;
 }
 
@@ -100,6 +98,7 @@ footer {
 .weather-forecast-day {
   max-width: 100px;
   background-color: rgba(173, 216, 230, 0.415);
+  margin: 25px;
 }
 .weather-forecast-date {
   text-align: center;

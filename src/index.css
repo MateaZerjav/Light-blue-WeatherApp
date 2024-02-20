@@ -115,3 +115,6 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+.description {
+  color: rgba(66, 124, 218, 0.73);
+}
